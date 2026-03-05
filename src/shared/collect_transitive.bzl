@@ -28,6 +28,6 @@ def collect_transitive_mappings(deps):
     "All of the module mappings need to be collected to be available at the binary target"
     mappings = {}
     for dep in deps:
-        for (k,v) in dep[SassInfo].module_mappings.items():
+        for (k, v) in dep[SassInfo].module_mappings.items():
             mappings[k] = v
     return mappings

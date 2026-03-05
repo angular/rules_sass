@@ -13,6 +13,7 @@
 # limitations under the License.
 
 """The `npm_sass_library` rule for importing and exposing sass files from npm packages for compilations."""
+
 load("@rules_sass//src/shared:providers.bzl", "SassInfo")
 load("@aspect_rules_js//js:providers.bzl", "JsInfo")
 
@@ -22,25 +23,28 @@ def _npm_sass_library_impl(ctx):
     module_mappings = {}
 
     for dep in ctx.attr.deps:
-      if JsInfo not in dep:
-        fail("The provided package (%s) does not contain JsInfo" % dep.label)
-      # We select the first npm_package_store_info as npm packages will always have only one definition.
-      package = dep[JsInfo].npm_package_store_infos.to_list()[0].package
-      # Set the module mapping for the specific package name to the location of the package.
-      module_mappings[package] = "%s/%s/%s" % (
-        ctx.bin_dir.path,
-        dep[JsInfo].target.package,
-        dep[JsInfo].target.name,
-      )
-      # Add all of the npm sources sources to the transitive source files.
-      transitive_sources.append(dep[JsInfo].npm_sources)
+        if JsInfo not in dep:
+            fail("The provided package (%s) does not contain JsInfo" % dep.label)
+
+        # We select the first npm_package_store_info as npm packages will always have only one definition.
+        package = dep[JsInfo].npm_package_store_infos.to_list()[0].package
+
+        # Set the module mapping for the specific package name to the location of the package.
+        module_mappings[package] = "%s/%s/%s" % (
+            ctx.bin_dir.path,
+            dep[JsInfo].target.package,
+            dep[JsInfo].target.name,
+        )
+
+        # Add all of the npm sources sources to the transitive source files.
+        transitive_sources.append(dep[JsInfo].npm_sources)
 
     outputs = depset(transitive = transitive_sources)
 
     return [
         SassInfo(
-          transitive_sources = outputs,
-          module_mappings = module_mappings
+            transitive_sources = outputs,
+            module_mappings = module_mappings,
         ),
         DefaultInfo(
             files = outputs,
