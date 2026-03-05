@@ -26,14 +26,14 @@ jobs:
             bin_name: sass_linux_arm
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: dart-lang/setup-dart@v1
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: dart-lang/setup-dart@e51d8e571e22473a2ddebf0ef8a2123f0ab2c02c # v1
       - run: dart pub get
       - run: mkdir -p src/compiler/built/
       - run: dart compile exe ./src/compiler/bin/x_sass.dart -o src/compiler/built/${{ matrix.bin_name }}
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         id: create_pr
         with:
           title: ${{matrix.bin_name}} binary update
