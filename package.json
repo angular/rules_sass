@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@angular/ng-dev": "https://github.com/angular/dev-infra-private-ng-dev-builds.git#7eebd54acea29dc15bfbc6599a2f11f2cea588b0",
-    "@bazel/buildifier": "^6.1.0",
+    "@bazel/buildifier": "^8.0.0",
     "prettier": "^3.8.0"
   }
 }
