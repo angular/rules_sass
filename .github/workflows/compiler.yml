@@ -61,3 +61,5 @@ jobs:
           commit-message: 'build: update compiler binaries to latest version'
           body: |
             Updated Sass compiler binaries.
+          labels: |
+            action: merge
