@@ -325,10 +325,10 @@ packages:
     dependency: transitive
     description:
       name: protobuf
-      sha256: "68645b24e0716782e58948f8467fd42a880f255096a821f9e7d0ec625b00c84d"
+      sha256: "75ec242d22e950bdcc79ee38dd520ce4ee0bc491d7fadc4ea47694604d22bf06"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "6.0.0"
   pub_semver:
     dependency: transitive
     description:
@@ -357,18 +357,18 @@ packages:
     dependency: transitive
     description:
       name: sass
-      sha256: "7ecca17ba9d523f760ce71a29c19438bf273f4f77a70a254116106da72cb611f"
+      sha256: "8ff9ecf7d4364d3ae78bc703074dd6732b4d9671c03326278ea966614257ac7b"
       url: "https://pub.dev"
     source: hosted
-    version: "1.86.3"
+    version: "1.97.3"
   sass_api:
     dependency: "direct main"
     description:
       name: sass_api
-      sha256: "56fa4d1aa9801ebf25dba11993929eac01f548b6e3628819399a0fabf155d9bd"
+      sha256: cb9eafb0a9e6332304ef81830b273b2a85e48b0c887ab04020b15b449a5fa26c
       url: "https://pub.dev"
     source: hosted
-    version: "15.3.3"
+    version: "17.3.3"
   shelf:
     dependency: transitive
     description:
