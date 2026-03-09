@@ -1,11 +1,11 @@
 {
   "name": "rules_sass",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.30.3",
+  "packageManager": "pnpm@10.31.0",
   "engines": {
     "npm": "Please use pnpm instead of NPM to install dependencies",
     "yarn": "Please use pnpm instead of Yarn to install dependencies",
-    "pnpm": "10.30.3"
+    "pnpm": "10.31.0"
   },
   "dependencies": {
     "@angular/ng-dev": "https://github.com/angular/dev-infra-private-ng-dev-builds.git#a92db02ad1facfddb722d181709f774b4892593d",
