@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@angular/ng-dev':
-        specifier: https://github.com/angular/dev-infra-private-ng-dev-builds.git#a92db02ad1facfddb722d181709f774b4892593d
-        version: https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/a92db02ad1facfddb722d181709f774b4892593d
+        specifier: https://github.com/angular/dev-infra-private-ng-dev-builds.git#59e67df867e405a71cdd1385a20d058ac0a5aacd
+        version: https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/59e67df867e405a71cdd1385a20d058ac0a5aacd
       '@bazel/buildifier':
         specifier: ^8.2.1
         version: 8.2.1
@@ -32,9 +32,9 @@ packages:
   '@actions/io@3.0.2':
     resolution: {integrity: sha512-nRBchcMM+QK1pdjO7/idu86rbJI5YHUKCvKs0KxnSYbVe3F51UfGxuZX4Qy/fWlp6l7gWFwIkrOzN+oUK03kfw==}
 
-  '@angular/ng-dev@https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/a92db02ad1facfddb722d181709f774b4892593d':
-    resolution: {tarball: https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/a92db02ad1facfddb722d181709f774b4892593d}
-    version: 0.0.0-22e0407413109186075cfebf3173549d37d4f4a4
+  '@angular/ng-dev@https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/59e67df867e405a71cdd1385a20d058ac0a5aacd':
+    resolution: {tarball: https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/59e67df867e405a71cdd1385a20d058ac0a5aacd}
+    version: 0.0.0-42cdb151b217e714c6e85a41ef3d2adddf8321d3
     hasBin: true
 
   '@bazel/buildifier@8.2.1':
@@ -1717,7 +1717,7 @@ snapshots:
 
   '@actions/io@3.0.2': {}
 
-  '@angular/ng-dev@https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/a92db02ad1facfddb722d181709f774b4892593d':
+  '@angular/ng-dev@https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/59e67df867e405a71cdd1385a20d058ac0a5aacd':
     dependencies:
       '@actions/core': 3.0.0
       '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)
