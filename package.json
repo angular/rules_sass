@@ -8,7 +8,7 @@
     "pnpm": "10.31.0"
   },
   "dependencies": {
-    "@angular/ng-dev": "https://github.com/angular/dev-infra-private-ng-dev-builds.git#e727e93612379965a3eba6d6d64b44fded10a743",
+    "@angular/ng-dev": "https://github.com/angular/dev-infra-private-ng-dev-builds.git#f9eabeac6431a685f8ff3258df26039f810171a8",
     "@bazel/buildifier": "^8.2.1",
     "prettier": "^3.8.0"
   }
