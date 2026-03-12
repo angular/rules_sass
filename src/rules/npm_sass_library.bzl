@@ -14,8 +14,8 @@
 
 """The `npm_sass_library` rule for importing and exposing sass files from npm packages for compilations."""
 
-load("@rules_sass//src/shared:providers.bzl", "SassInfo")
 load("@aspect_rules_js//js:providers.bzl", "JsInfo")
+load("@rules_sass//src/shared:providers.bzl", "SassInfo")
 
 def _npm_sass_library_impl(ctx):
     """npm_sass_library collects all transitive sources for the provided npm packages provided in deps."""

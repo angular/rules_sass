@@ -15,7 +15,7 @@
 
 """The `sass_library` rule for grouping and exposing Sass files for compilations."""
 
-load("@aspect_bazel_lib//lib:copy_to_bin.bzl", "COPY_FILE_TO_BIN_TOOLCHAINS", "copy_file_to_bin_action")
+load("@bazel_lib//lib:copy_to_bin.bzl", "COPY_FILE_TO_BIN_TOOLCHAINS", "copy_file_to_bin_action")
 load("@rules_sass//src/shared:collect_transitive.bzl", "collect_transitive_mappings", "collect_transitive_sources")
 load("@rules_sass//src/shared:extensions.bzl", "ALLOWED_SRC_FILE_EXTENSIONS")
 load("@rules_sass//src/shared:providers.bzl", "SassInfo")
